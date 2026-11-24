@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Taj Mahal</title>
+
+  <!-- LINK TO CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <nav class="navbar">
+    <div class="container">
+      <span class="site-name">The Taj Mahal</span>
+
+      <div class="nav-links">
+        <button id="btn-home" class="active" onclick="showPage('home')">Home</button>
+        <button id="btn-history" onclick="showPage('history')">History &amp; About</button>
+        <button id="btn-gallery" onclick="showPage('gallery')">Gallery</button>
+        <button id="btn-members" onclick="showPage('members')">Team Members</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ======================================================
+       PAGE 1: HOME
+       ====================================================== -->
+  <main>
+  <section id="home" class="page active">
+    <div class="container">
+
+      <h1>The Taj Mahal</h1>
+
+      <figure class="photo">
+        <img src="images/taj-main.jpg" alt="The Taj Mahal seen from the front">
+      </figure>
+
+      <!-- Introduction paragraph -->
+      <p>
+        The Taj Mahal is An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor 
+        Shah Jahan in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally 
+        admired masterpieces of the world's heritage. It is famous around the world for its beauty and perfect symmetry,
+        and it is often described as a symbol of love.
+      </p>
+
+      <!-- Heading above the three cards -->
+      <h2>Quick Facts</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3> Design</h3>
+          <p>This clever architectural choice ensures that in the event of a structural collapse, the towers would fall away from the main mausoleum, protecting the central tomb from damage</p>
+        </div>
+
+        <div class="card">
+          <h3>White marble construction of Taj Mahal</h3>
+          <p>The Taj Mahal is primarily constructed of white marble sourced from Makrana, Rajasthan. The marble’s reflective quality changes its colour throughout the day, appearing pink in the morning, white at noon, and golden at sunset.</p>
+        </div>
+
+        <div class="card">
+          <h3>The myth of the black Taj</h3>
+          <p> A popular myth that Shah Jahan planned to build a "Black Taj Mahal" across the Yamuna River as his own mausoleum. However, this second monument was never constructed, possibly due to Shah Jahan’s imprisonment by his son.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 2: HISTORY & ABOUT
+       ====================================================== -->
+  <section id="history" class="page">
+    <div class="container">
+
+      <h1>History &amp; About</h1>
+
+      <figure class="photo">
+        <img src="images/taj-History.jpg" alt="Historic view of the Taj Mahal">
+      </figure>
+
+      <h2>When Was It Built?</h2>
+
+      <p>
+        Construction started in 1632 (after being ordered in 1631). 
+        Over 20,000 workers and artisans spent 16 years building the main white marble tomb,finishing it in 1648.
+        It took another five years to complete the surrounding gardens 
+        and buildings, meaning the entire complex was officially finished in 1653.
+      </p>
+
+      <h2>Why Was It Built?</h2>
+
+      <p>
+        It was built out of deep grief and love. In June 1631, the Mughal emperor 
+        Shah Jahan’s favorite wife, Mumtaz Mahal, died while giving birth to their 14th child.
+        Devastated by her death, the emperor stepped back from royal duties,
+        gave up music and fine clothes for two years, and commissioned this grand mausoleum in Agra to honor her memory and serve as her final resting place. 
+        Later on, Shah Jahan himself was buried there beside her.
+      </p>
+
+      <h2>Key Architectural Features</h2>
+
+      <ul>
+        <li><strong>White marble:</strong> The main building is made of white marble that seems to change color during the day.</li>
+        <li><strong>Central dome:</strong> A large dome sits on top of the tomb, surrounded by smaller domed pavilions.</li>
+        <li><strong>Four minarets:</strong> Four tall towers stand at the corners of the platform.</li>
+        <li><strong>Pietra dura inlay:</strong> Flowers and patterns are made by setting colored stones into the marble.</li>
+        <li><strong>Calligraphy:</strong> Verses from the Quran are written in black stone on the main archways.</li>
+        <li><strong>Charbagh garden:</strong> A garden divided into four parts by water channels, with a long reflecting pool.</li>
+        <li><strong>Perfect symmetry:</strong> Almost every part of the complex has a matching part on the opposite side.</li>
+      </ul>
+
+      <h2>Time Line</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1631</td><td>Mumtaz Mahal passes away.</td></tr>
+          <tr><td>1632</td><td>Construction of the Taj Mahal begins.</td></tr>
+          <tr><td>1648</td><td>The main marble mausoleum is completed.</td></tr>
+          <tr><td>1653</td><td>The entire complex is finished.</td></tr>
+          <tr><td>1666</td><td>Shah Jahan passes away and is buried beside Mumtaz Mahal.</td></tr>
+          <tr><td>1983</td><td>The Taj Mahal is named a UNESCO World Heritage Site.</td></tr>
+          <tr><td>2007</td><td>It is chosen as one of the New Seven Wonders of the World.</td></tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 3: GALLERY
+       ====================================================== -->
+  <section id="gallery" class="page">
+    <div class="container">
+
+      <h1>Gallery</h1>
+
+      <p>Different views of the Taj Mahal. </p>
+
+      <div class="gallery">
+
+        <figure class="photo" data-category="mausoleum">
+          <img src="images/Taj gold.jpg" alt="Main mausoleum of the Taj Mahal">
+          <figcaption>Main Mausoleum: The white marble tomb with its large central dome.</figcaption>
+        </figure>
+
+        <figure class="photo" data-category="gardens">
+          <img src="images/Taj-Garden.jpg" alt="Gardens and reflecting pool at the Taj Mahal">
+          <figcaption>Gardens: The charbagh garden and the long reflecting pool.</figcaption>
+        </figure>
+
+        <figure class="photo" data-category="riverfront">
+          <img src="images/taj-riverfront.jpg" alt="Taj Mahal seen from the Yamuna riverfront">
+          <figcaption>Riverfront: The Taj Mahal as seen from the banks of the Yamuna River.</figcaption>
+        </figure>
+
+        <figure class="photo" data-category="interior">
+          <img src="images/taj-interior.jpg" alt="Interior of the Taj Mahal">
+          <figcaption>Interior: Carved marble screens and decorated walls inside the tomb.</figcaption>
+        </figure>
+
+        <figure class="photo" data-category="Taj mahal">
+          <img src="images/Taj-old.jpg" alt="Old Taj Mahal">
+          <figcaption>Photograph of the Taj Mahal by Samuel Bourne, 1860s</figcaption>
+        </figure>
+
+        <figure class="photo" data-category="Taj mahal">
+          <img src="images/Taj-mainGate.jpg" alt="Taj Mahal Main Gate">
+          <figcaption>The main gateway (darwaza)</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       PAGE 4: TEAM MEMBERS
+       ====================================================== -->
+  <section id="members" class="page">
+    <div class="container">
+
+      <h1>Team Members</h1>
+
+      <p>This website was made by the following students for the Web Development mini-project.</p>
+
+      <h2>Project Group</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Roll Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Sk Mosarof Hossain</td><td>S26CSEU0579</td></tr>
+          <tr><td>2</td><td>Deepvardhan Singh</td><td>S26CSEU0587</td></tr>
+          <tr><td>3</td><td>Prabal Singha</td><td>S26CSEU0624</td></tr>
+        </tbody>
+      </table>
+
+      <p>Course: Web Development (2026FSWD100), Bennett University, Greater Noida.</p>
+
+      <figure class="photo" data-category="Taj mahal">
+          <img src="images/Taj-from river.jpg" alt="Outside Taj Mahal">
+        </figure>
+
+    </div>
+  </section>
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="container">
+      <p>The Taj Mahal | Made by: Sk Mosarof Hossain, Deepvardhan Singh and Prabal Singhal</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

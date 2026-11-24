@@ -1,0 +1,188 @@
+:root {
+  --page-bg: #faf8f3;
+  --text-color: #2b2b2b;
+  --heading-color: #1f3a4d;
+  --accent-color: #8a5a2b;
+  --nav-bg: #316991;
+  --nav-text: #ffffff;
+  --card-bg: #ffffff;
+  --border-color: #d9d4c7;
+  --photo-bg: #ebe7dc;
+  --footer-bg: #ebe7dc;
+}
+
+/* ---------- BASIC PAGE STYLE ----------*/
+* { box-sizing: border-box; } 
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-color);
+  background: var(--page-bg);
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.7rem; margin-top: 32px; }
+h3 { font-size: 1.2rem; }
+
+p { margin: 0 0 16px; }
+
+/* Keeps all content in a neat, centered column (max 860px wide) */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- NAVIGATION BAR ----------*/
+.navbar {
+  background: var(--nav-bg);
+}
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.site-name {
+  color: var(--nav-text);
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+.nav-links button {
+  background: none;
+  border: none;
+  color: var(--nav-text);
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+.nav-links button:hover { border-bottom-color: #cdbb9c; }
+.nav-links button.active { border-bottom-color: #ffffff; font-weight: bold; }
+
+/* ---------- PAGES ----------*/
+.page { display: none; padding: 32px 0 48px; }
+.page.active { display: block; }
+
+.small-label {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+}
+
+.photo {
+  margin: 0 0 24px;
+}
+.photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 460px;        /* EDIT HERE: tallest a big photo can be */
+  object-fit: cover;        /* crops instead of stretching */
+  background: var(--photo-bg);
+  border: 1px solid var(--border-color);
+}
+.photo figcaption {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555555;
+  margin-top: 6px;
+}
+
+/* ---------- CARDS ----------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--accent-color);
+  padding: 18px;
+}
+.card p { margin: 0; font-size: 1rem; }
+
+/* ---------- LISTS AND TABLE ---------- */
+ul { padding-left: 24px; margin: 0 0 16px; }
+li { margin-bottom: 8px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  margin-bottom: 16px;
+}
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  background: var(--photo-bg);
+  color: var(--heading-color);
+}
+
+/* ---------- GALLERY ----------*/
+.filters { margin-bottom: 20px; }
+.filters button {
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: var(--card-bg);
+  color: var(--heading-color);
+  border: 1px solid var(--accent-color);
+  padding: 6px 14px;
+  margin: 0 6px 6px 0;
+  cursor: pointer;
+}
+.filters button.active {
+  background: var(--accent-color);
+  color: #ffffff;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.gallery figure { margin: 0; }
+.gallery img {
+  height: 240px;            /* height of every gallery photo */
+  max-height: none;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: var(--footer-bg);
+  border-top: 1px solid var(--border-color);
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer p { margin: 0; }
+
+/* ---------- SMALL SCREENS (phones) ----------
+   When the screen is 700px wide or less, show the cards and
+   photos one below the other (1 column). */
+@media (max-width: 700px) {
+  body { font-size: 17px; }
+  .photo img { max-height: 300px; }
+  .gallery img { height: 220px; }
+  h1 { font-size: 1.9rem; }
+  .cards, .gallery { grid-template-columns: 1fr; }
+}
