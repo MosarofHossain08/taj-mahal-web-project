@@ -10,6 +10,4 @@ A small responsive website about the Taj Mahal, built with HTML, CSS, and JavaSc
 - Return to the top when switching pages.
 - JavaScript includes gallery-category filtering logic.
 
-## Run locally
 
-Open `index.html` in a browser.
