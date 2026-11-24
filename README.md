@@ -1,13 +1,13 @@
-# Taj Mahal Website
+# 🕌 Taj Mahal — Interactive Web Showcase
 
-[Live demo](https://mosarofhossain08.github.io/taj-mahal-web-project/)
+A responsive, beginner-friendly web development project exploring the history, architecture, and beauty of the Taj Mahal.
 
-A small responsive website about the Taj Mahal, built with HTML, CSS, and JavaScript.
+## ✨ Features
+* **Responsive Design:** Adapts cleanly across mobile, tablet, and desktop screens.
+* **Interactive Elements:** Built with vanilla JavaScript for smooth user interactions (e.g., image gallery/tabs/animations).
+* **Clean Structure:** Semantic HTML5 and modular CSS3 styling.
 
-## Features
-
-- Navigate between the Home, History, Gallery, and Team pages.
-- Return to the top when switching pages.
-- JavaScript includes gallery-category filtering logic.
-
-
+## 🛠️ Built With
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
